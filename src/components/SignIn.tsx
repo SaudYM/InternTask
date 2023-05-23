@@ -4,7 +4,8 @@ export const SignIn = () => {
   return (
     <>
       <div className="login-card">
-        <img src="Logo.svg" alt="" />
+        <img src="Logo.svg" alt="logo" />
+
         <div className="text">
           <p className="SubSign1">SIGN IN</p>
           <p className="SubSign2">
@@ -13,12 +14,18 @@ export const SignIn = () => {
         </div>
 
         <div className="logInForm">
-          <form>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Enter your email" />
-
-            <label>Password</label>
+          <form className="formLogIn">
+            <label className="LogInFomrLabel">Email</label>
             <input
+              className="InpunLogIn"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+
+            <label className="LogInFomrLabel">Password</label>
+            <input
+              className="InpunLogIn"
               type="password"
               name="password"
               placeholder="Enter your password"

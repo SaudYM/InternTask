@@ -11,77 +11,88 @@ body {
 }
 
 .login-card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: start;
+  justify-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 550px;
-  width: 475px;
+  height: 66%;
+  width: 30%;
   background: #fff;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  max-width: 550px;
 }
 
 .login-card img {
-  margin-left: 60px;
-  margin-top: 40px;
+  width: 70%;
+  padding: 30px;
 }
 .SubSign1 {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 1.375rem;
   text-align: center;
 }
 .SubSign2 {
   font-style: normal;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 0.9rem;
   text-align: center;
 
   color: #6c6c6c;
 }
 .logInForm {
   display: flex;
+  width: 80%;
 }
-label {
-  margin-left: 20px;
-  margin-top: 40px;
-  display: block;
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #a4a4a4;
-  font-size: 12px;
+.formLogIn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: #6c6c6c;
 }
-input {
-  margin-left: 20px;
-  background: #ffffff;
-  width: 415px;
+.LogInFomrLabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: #6c6c6c;
+}
+.InpunLogIn {
+  box-sizing: border-box;
+
+  width: 100%;
   height: 44px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
-  background-repeat: no-repeat;
+  padding-left: 10px;
+  font-size: 0.88rem;
 }
 input::placeholder {
-  font-weight: 400;
-  font-size: 0.75rem;
-  padding: 10px;
+  color: #cdcdcd;
 }
 .SignInBut {
-  background-color: #feaf00;
-  width: 422px;
+  margin-top: 20px;
   height: 44px;
-  margin-top: 30px;
-  margin-left: 20px;
-  border: none;
-  color: #ffffff;
-  font-size: 0.88rem;
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+  background: #feaf00;
   border-radius: 4px;
+  font-size: 0.88rem;
+  border: none;
+  cursor: pointer;
 }
 .FootOfloogin {
   text-align: center;
 }
 p > span {
-  color: #FEAF00
-  ;
+  color: #feaf00;
+  text-decoration: underline;
 }
