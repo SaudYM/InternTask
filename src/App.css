@@ -186,6 +186,7 @@ main {
 }
 
 /*                             */
+
 .StudentContainer {
   display: flex;
   flex-direction: row;
@@ -194,7 +195,7 @@ main {
 .SummeryCards {
   padding: 10px;
   margin: 60px 20px 0px 20px;
-  width: 70%;
+  width: 15%;
   height: 157px;
   border-radius: 8px;
   background-color: #f0f9ff;
@@ -225,8 +226,8 @@ main {
   padding-top: 15px;
 }
 .Tag {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 1rem;
+  color: #6C6C6C;
   padding-top: 10px;
 }
 .NumberDB {
@@ -236,6 +237,9 @@ main {
   font-size: 30px;
   text-align: right;
 }
+
+
+
 /*                               */
 
 .TopBar {
