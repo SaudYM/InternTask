@@ -34,7 +34,7 @@ export default function Home() {
         <div className="CardInfo">
           <img className="userDB" src="userIcon.svg" alt="" />
           <br />
-          <span className="Tag">Users</span>
+          <span className="TagUser">Users</span>
           <br />
           <div className="NumberDB"><b>3</b></div>
         </div>

@@ -202,11 +202,12 @@ main {
 .StudentContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: start;
 }
 .SummeryCards {
   padding: 10px;
   margin-top: 3%;
+  margin-right: 4%;
   width: 20%;
   height: 20%;
   border-radius: 8px;
@@ -216,6 +217,8 @@ main {
   align-items: center;
 }
 .SummeryCards2 {
+  margin-right: 4%;
+
   padding: 10px;
   margin-top: 3%;
   width: 20%;
@@ -227,6 +230,8 @@ main {
   align-items: center;
 }
 .SummeryCards3 {
+  margin-right: 4%;
+
   padding: 10px;
   margin-top: 3%;
   width: 20%;
@@ -239,6 +244,8 @@ main {
 }
 .SummeryCards4 {
   padding: 10px;
+  margin-right: 4%;
+
   margin-top: 3%;
   width: 20%;
   height: 20%;
@@ -275,6 +282,10 @@ main {
 .Tag {
   font-size: 1.2rem;
   color: #6c6c6c;
+}
+.TagUser{
+  font-size: 1.2rem;
+  color: white;
 }
 .NumberDB {
   padding-top: 10%;
