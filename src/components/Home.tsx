@@ -5,25 +5,39 @@ export default function Home() {
     <div className="StudentContainer">
       <div className="SummeryCards">
         <div className="CardInfo">
-          <img src="StudentDB.svg" alt="" />
-          <p className="Tag">Student</p>
-          <p className="NumberDB">243</p>
+          <img className="stundetDB" src="StudentDB.svg" alt="" />
+          <br />
+          <span className="Tag">Student</span>
+          <br />
+          <div className="NumberDB"><b>243</b></div>
         </div>
       </div>
-      <div className="SummeryCards">
-        <img src="StudentDB.svg" alt="" />
-        <p>Student</p>
-        <p className="NumberDB">243</p>
+      <div className="SummeryCards2">
+        <div className="CardInfo">
+          <img className="BMDB" src="bookmarkSum.svg" alt="" />
+          <br />
+          <span className="Tag">Course</span>
+          <br />
+          <div className="NumberDB"><b>13</b></div>
+        </div>
       </div>
-      <div className="SummeryCards">
-        <img src="StudentDB.svg" alt="" />
-        <p>Student</p>
-        <p className="NumberDB">243</p>
+      <div className="SummeryCards3">
+        <div className="CardInfo">
+          <img className="paysDB" src="paysum.svg" alt="" />
+          <br />
+          <span className="Tag">Payments</span>
+          <br />
+          <div className="NumberDB"><b>INR 556,000</b></div>
+        </div>
       </div>
-      <div className="SummeryCards">
-        <img src="StudentDB.svg" alt="" />
-        <p>Student</p>
-        <p className="NumberDB">243</p>
+      <div className="SummeryCards4">
+        <div className="CardInfo">
+          <img className="userDB" src="userIcon.svg" alt="" />
+          <br />
+          <span className="Tag">Users</span>
+          <br />
+          <div className="NumberDB"><b>3</b></div>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ function Sidebar({ children }: any) {
   const menuItems = [
     {
       path: "/DashBoard",
-      name: "dashboard",
+      name: "Home",
       icon: "home.svg",
     },
     {
@@ -37,7 +37,7 @@ function Sidebar({ children }: any) {
             <img src="Logo.svg" alt="logo" className="LogoInSide" />
           </div>
           <div className="UserInfo">
-            <img src="user.png" alt="user" className="UserIMG" />
+            <img src="user.svg" alt="user" className="UserIMG" />
             <p className="AdminFont">
               Karthi Madesh
               <p className="AdminFont2">Admin</p>
@@ -46,15 +46,17 @@ function Sidebar({ children }: any) {
           {menuItems.map((item, index) => (
             <NavLink to={item.path} key={index} className={"link"}>
               <img className="icon" src={item.icon} alt="" />
-              <span className="linktext">{item.name}</span>
+              <span className="linktext">
+                <b>{item.name}</b>
+              </span>
             </NavLink>
           ))}
-          <div className="Footer">
-            
-            <span className="linktext">Logout</span>
-            <img className="icon" src="logout.svg" alt="" />
-
-          </div>
+          <NavLink to="/" className={'footerLink'} >
+            <div className="Footer">
+              <span className="linktext2"><b>Logout</b></span>
+              <img className="icon" src="logout.svg" alt="" />
+            </div>
+          </NavLink>
         </div>
 
         <main>{children}</main>
