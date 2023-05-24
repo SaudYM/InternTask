@@ -166,7 +166,7 @@ main {
   margin-left: 20px;
 }
 .Footer {
-  margin-top: 160px;
+  margin-top: 100px;
   color: #000000;
   display: flex;
   justify-content: center;
@@ -185,11 +185,58 @@ main {
   color: #000;
 }
 
+/*                             */
+.StudentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.SummeryCards {
+  padding: 10px;
+  margin: 60px 20px 0px 20px;
+  width: 70%;
+  height: 157px;
+  border-radius: 8px;
+  background-color: #f0f9ff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+/* logo doesnot get colored propely */
+/* .logo {
+  background-color: #74c1ed;
+  -webkit-mask: url(student.svg) no-repeat;
+  mask: url(student.svg) no-repeat;
+} */
 
+/* .SummeryCards > img {
+  color: blue;
+  width: 50px;
+  height: 28px;
+} */
+.SummeryCards {
+  text-align: left;
+  color: #6c6c6c;
+}
+.SummeryCards > img {
+  width: 20%;
+  height: 25%;
+  padding-top: 15px;
+}
+.Tag {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.NumberDB {
+  padding-bottom: 20px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right;
+}
 /*                               */
-
-
 
 .TopBar {
   display: flex;
@@ -204,7 +251,7 @@ main {
 }
 .Searchbar {
   display: flex;
-  
+
   align-items: center;
 }
 
@@ -231,12 +278,10 @@ input::placeholder {
 .NotifyIcon {
   width: 30px;
   height: 25px;
- ;
 }
 .FoldIcon {
   width: 26px;
   height: 20px;
-
 }
 
 .DashboardContainer {

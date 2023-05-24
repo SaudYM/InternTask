@@ -50,6 +50,7 @@ function Sidebar({ children }: any) {
             </NavLink>
           ))}
           <div className="Footer">
+            
             <span className="linktext">Logout</span>
             <img className="icon" src="logout.svg" alt="" />
 

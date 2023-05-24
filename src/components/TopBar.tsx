@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function TopBar() {
+export default function TopBar({ children }: any) {
   return (
     <>
       <nav className="TopBar">
         <div>
-          <img src="baricon.svg" alt="fold" className="FoldIcon"/>
+          <img src="baricon.svg" alt="fold" className="FoldIcon" />
         </div>
 
         <div className="Searchbar">
@@ -18,10 +18,11 @@ export default function TopBar() {
             />
           </form>
 
-          <img src="search.svg" alt="search icon" className="searchIcon"/>
+          <img src="search.svg" alt="search icon" className="searchIcon" />
           <img src="notifi.svg" alt="notif icon" className="NotifyIcon" />
         </div>
       </nav>
+      <main>{children}</main>
     </>
   );
 }

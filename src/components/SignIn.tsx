@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 export const SignIn = () => {
   return (
     <>
@@ -23,7 +23,6 @@ export const SignIn = () => {
                 name="email"
                 placeholder="Enter your email"
               />
-
               <label className="LogInFomrLabel">Password</label>
               <input
                 className="InpunLogIn"
@@ -31,8 +30,9 @@ export const SignIn = () => {
                 name="password"
                 placeholder="Enter your password"
               />
-
-              <button className="SignInBut">SIGN IN</button>
+              <NavLink to="/DashBoard">
+                <button className="SignInBut">SIGN IN</button>
+              </NavLink>
               <p className="FootOfloogin">
                 Forgot your password? <span>Reset Password</span>
               </p>

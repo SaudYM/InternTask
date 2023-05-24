@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "./Sidebar";
+import TopBar from "./TopBar";
 
 export default function Studnet() {
   return (
-    <div>Studnet</div>
-  )
+    <Sidebar>
+      <TopBar>
+        <h1>stunde page</h1>
+      </TopBar>
+    </Sidebar>
+  );
 }
