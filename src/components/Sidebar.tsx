@@ -9,12 +9,12 @@ function Sidebar({ children }: any) {
     },
     {
       path: "/Studnet",
-      name: "studnet",
+      name: "Studnet",
       icon: "student.svg",
     },
     {
       path: "/Payment",
-      name: "payment",
+      name: "Payment",
       icon: "payment.svg",
     },
     {

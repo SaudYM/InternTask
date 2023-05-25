@@ -184,7 +184,7 @@ main {
 }
 .Footer > img {
   width: 20px;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 .icon,
@@ -353,9 +353,19 @@ input::placeholder {
   justify-content: space-between;
 }
 
-/*                             */
-
+/*                               */
+/* .SbackG{
+  background: #f6f6f6;
+  background-color: #f6f6f6;
+  height: 100%;   
+} */
 .StudnetInfo {
+  background: #f6f6f6;
+  height: 160%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   background: #f6f6f6;
@@ -371,6 +381,7 @@ input::placeholder {
   transition: all 0.5s ease-in-out;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #e5e5e5;
 }
 .StudentsHeader > p {
   margin-left: 10px;
@@ -405,4 +416,101 @@ input::placeholder {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+}
+/*                             */
+
+.HaedeOfSB {
+  margin-top: 1%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.HaedeOfSB span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #acacac;
+  margin-right: 1rem;
+  width: 10rem;
+}
+
+.CardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.listcard {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 1%;
+  width: 97%;
+  background-color: white;
+  border-radius: 7%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.listcard span {
+  width: 10rem;
+}
+
+.name {
+  width: 18rem;
+  margin-left: 1.3rem;
+}
+
+.email {
+  margin-left: 9.7rem;
+
+  width: 15rem;
+}
+
+.phone {
+  margin-left: 6.2em;
+
+  width: 10rem;
+}
+
+.enroll {
+  margin-left: 9em;
+
+  width: 5rem;
+}
+
+.date {
+  margin-left: 8.5em;
+
+  width: 10rem;
+}
+.listcard > .studentimg {
+  width: 4%;
+  height: 4%;
+  border-radius: 6px;
+}
+.editlogo {
+  margin-left: 2rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.deletelogo {
+  cursor: pointer;
+}
+.SbackG{
+  background: #f6f6f6;
+  height: 50rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
