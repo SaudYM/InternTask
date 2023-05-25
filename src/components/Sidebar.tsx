@@ -47,7 +47,7 @@ function Sidebar({ children }: any) {
             <NavLink to={item.path} key={index} className={"link"}>
               <img className="icon" src={item.icon} alt="" />
               <span className="linktext">
-                <b>{item.name}</b>
+                {item.name}
               </span>
             </NavLink>
           ))}

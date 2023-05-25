@@ -7,13 +7,13 @@ export default function Studnet() {
     <Sidebar>
       <TopBar>
         <body className="StudnetInfo">
-          <nav className="StudentsHeader">
+          <div className="StudentsHeader">
             <p>Students List</p>
             <div className="leftofHeadr">
               <img src="sort.svg" alt="" />
               <button>ADD NEW STUDENT</button>
             </div>
-          </nav>
+          </div>
           <Studnetbody></Studnetbody>
         </body>
       </TopBar>

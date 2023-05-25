@@ -7,7 +7,7 @@ export default function Home() {
         <div className="CardInfo">
           <img className="stundetDB" src="StudentDB.svg" alt="" />
           <br />
-          <span className="Tag">Student</span>
+          <span className="Tag">Students</span>
           <br />
           <div className="NumberDB"><b>243</b></div>
         </div>
