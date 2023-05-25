@@ -51,9 +51,11 @@ function Sidebar({ children }: any) {
               </span>
             </NavLink>
           ))}
-          <NavLink to="/" className={'footerLink'} >
+          <NavLink to="/" className={"footerLink"}>
             <div className="Footer">
-              <span className="linktext2"><b>Logout</b></span>
+              <span className="linktext2">
+                <b>Logout</b>
+              </span>
               <img className="icon" src="logout.svg" alt="" />
             </div>
           </NavLink>
