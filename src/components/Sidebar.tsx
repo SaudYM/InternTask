@@ -43,14 +43,16 @@ function Sidebar({ children }: any) {
               <p className="AdminFont2">Admin</p>
             </p>
           </div>
-          {menuItems.map((item, index) => (
-            <NavLink to={item.path} key={index} className={"link"}>
-              <img className="icon" src={item.icon} alt="" />
-              <span className="linktext">
-                {item.name}
-              </span>
-            </NavLink>
-          ))}
+          <div className="SidebarlinksContainer">
+            {menuItems.map((item, index) => (
+              <NavLink to={item.path} key={index} className={"link"}>
+                <div className="linksContainer">
+                  <img className="icon" src={item.icon} alt="" />
+                  <span className="linktext">{item.name}</span>
+                </div>
+              </NavLink>
+            ))}
+          </div>
           <NavLink to="/" className={"footerLink"}>
             <div className="Footer">
               <span className="linktext2">

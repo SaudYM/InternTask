@@ -117,7 +117,7 @@ main {
   width: 20%;
   transition: all 0.5s;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .LogoInSide {
   width: 100%;
@@ -161,20 +161,32 @@ main {
   text-decoration: none;
 }
 .link {
+  align-content: center;
   margin: 25px;
   color: #000000;
   text-decoration: none;
   display: flex;
   padding: 10px 15px;
 }
-.link > span {
-  margin-left: 20px;
+.SidebarlinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.link > img {
-  margin-left: 50px;
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.linksContainer > span{
+  margin-left: 2vh;
 }
 .Footer {
-  margin-top: 160px;
+  margin-top: 5vh;
   color: #000000;
   display: flex;
   justify-content: center;
