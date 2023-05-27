@@ -12,33 +12,15 @@ interface Student {
   enroll: string;
   DoA: string;
 }
-export default function Studnet() {
+export default function Studnet(props: any) {
+  const [studnets, setStudnets] = [props.studnets, props.setStudnets];
+
   const removeStudnet = (deletingstudent: Student) => {
     const newStudnets = studnets.filter(
-      (studnet) => studnet.id !== deletingstudent.id
+      (studnet: Student) => studnet.id !== deletingstudent.id
     );
     setStudnets(newStudnets);
   };
-  const [studnets, setStudnets] = useState([
-    {
-      id: 1,
-      img: "user.svg",
-      name: "Karthi Madesh",
-      email: "karthi@gmmail.com",
-      phone: "9876543210",
-      enroll: "123423256789",
-      DoA: "08-Dec, 2021",
-    },
-    {
-      id: 2,
-      img: "user.svg",
-      name: "Karthi Madesh",
-      email: "karsdsthi@gmmail.com",
-      phone: "9876543210",
-      enroll: "123456789",
-      DoA: "08-Dec, 2021",
-    },
-  ]);
   function addStudnet(
     name: any,
     email: any,
@@ -65,7 +47,7 @@ export default function Studnet() {
     enroll: any,
     DoA: any
   ) {
-    const updatedStundet = studnets.map((studnet) => {
+    const updatedStundet = studnets.map((studnet: Student) => {
       if (id === studnet.id) {
         return {
           ...studnet,
@@ -103,7 +85,7 @@ export default function Studnet() {
               <span>Date of admission</span>
             </div>
             <div className="CardsContainer">
-              {studnets.map((studnet) => (
+              {studnets.map((studnet: Student) => (
                 <div className="listcard">
                   <img className="studentimg" src="user.svg" alt="studentimg" />
                   <span className="name">{studnet.name}</span>

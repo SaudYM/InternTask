@@ -3,7 +3,9 @@ import Sidebar from "./Sidebar";
 import TopBar from "./TopBar";
 import Paymentbody from "./Paymentbody";
 
-export default function Payment() {
+export default function Payment(props: any) {
+  const [payments, setPayments] = [props.payments, props.setPayments];
+
   return (
     <Sidebar>
       <TopBar>
@@ -14,7 +16,10 @@ export default function Payment() {
               <img src="sort.svg" alt="" />
             </div>
           </div>
-          <Paymentbody></Paymentbody>
+          <Paymentbody
+            payments={payments}
+            setPayments={setPayments}
+          ></Paymentbody>
         </body>
       </TopBar>
     </Sidebar>

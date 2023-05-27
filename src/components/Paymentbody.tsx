@@ -1,49 +1,28 @@
-import React from "react";
-
-export default function Paymentbody() {
-  const payments = [
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
-  ];
+import React, { useState } from "react";
+interface Payment {
+  name: string;
+  paymentSchedule: string;
+  billNumber: string;
+  amountPaid: string;
+  balanceAmount: string;
+  date: string;
+  img: string;
+}
+export default function Paymentbody(props: any) {
+  const [hiddenRows, setHiddenRows] = useState([{}]);
+  const [payments, setPayments] = [props.payments, props.setPayments];
+  const toggleRowVisibility = (index: number) => {
+    if (hiddenRows.includes(index)) {
+      setHiddenRows(hiddenRows.filter((item) => item !== index));
+    } else {
+      setHiddenRows([...hiddenRows, index]);
+    }
+  };
   return (
     <>
       {" "}
       <div className="tablediv">
-        <table id="customers">
+        <table id="payments">
           <tr>
             <th>Name</th>
             <th>Payment Schedule</th>
@@ -53,12 +32,14 @@ export default function Paymentbody() {
             <th>Date</th>
             <th></th>
           </tr>
-          {/* <td>Alfreds Futterkiste</td> */}
 
-          {payments.map((payment) => {
+          {payments.map((payment: Payment, index: number) => {
             return (
               <>
-                <tr>
+                <tr
+                  key={index}
+                  className={hiddenRows.includes(index) ? "hidden-row" : ""}
+                >
                   <td>{payment.name}</td>
                   <td>{payment.paymentSchedule}</td>
                   <td>{payment.billNumber}</td>
@@ -66,7 +47,11 @@ export default function Paymentbody() {
                   <td>{payment.balanceAmount}</td>
                   <td>{payment.date}</td>
                   <td>
-                    <img src="eye.svg" alt="" />
+                    <img
+                      src="eye.svg"
+                      alt="visiable"
+                      onClick={() => toggleRowVisibility(index)}
+                    />
                   </td>
                 </tr>{" "}
               </>
