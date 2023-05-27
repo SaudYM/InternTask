@@ -32,7 +32,8 @@ export default function Home(props: any) {
           <span className="Tag">Payments</span>
           <br />
           <div className="NumberDB">
-            <b>INR 556,000</b>
+            <b className="currency">INR </b>
+            <b>556,000</b>
           </div>
         </div>
       </div>

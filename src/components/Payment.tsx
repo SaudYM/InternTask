@@ -9,7 +9,7 @@ export default function Payment(props: any) {
   return (
     <Sidebar>
       <TopBar>
-        <body className="StudnetInfo">
+        <div className="StudnetInfo">
           <div className="StudentsHeader">
             <p>Payment Details</p>
             <div className="leftofHeadr">
@@ -20,7 +20,7 @@ export default function Payment(props: any) {
             payments={payments}
             setPayments={setPayments}
           ></Paymentbody>
-        </body>
+        </div>
       </TopBar>
     </Sidebar>
   );

@@ -120,7 +120,7 @@ main {
   text-align: center;
 }
 .LogoInSide {
-  width: 20rem;
+  width: 100%;
 }
 .top_section {
   display: flex;
@@ -130,6 +130,7 @@ main {
 .UserIMG {
   width: 50%;
   border-radius: 50%;
+  margin-bottom: 5%;
 }
 .UserInfo {
   text-align: center;
@@ -215,14 +216,14 @@ main {
 
 .StudentContainer {
   display: flex;
-  
+
   padding-left: 50px;
 }
 .SummeryCards {
-  padding: 10px;
+  padding: 1%;
   margin-top: 3%;
   margin-right: 4%;
-  width: 20%;
+  width: 25%;
   height: 20%;
   border-radius: 8px;
   background-color: #f0f9ff;
@@ -233,9 +234,9 @@ main {
 .SummeryCards2 {
   margin-right: 4%;
 
-  padding: 10px;
+  padding: 1%;
   margin-top: 3%;
-  width: 20%;
+  width: 25%;
   height: 20%;
   border-radius: 8px;
   background: #fef6fb;
@@ -246,9 +247,9 @@ main {
 .SummeryCards3 {
   margin-right: 4%;
 
-  padding: 10px;
+  padding: 1%;
   margin-top: 3%;
-  width: 20%;
+  width: 25%;
   height: 20%;
   border-radius: 8px;
   background: #fefbec;
@@ -257,11 +258,11 @@ main {
   align-items: center;
 }
 .SummeryCards4 {
-  padding: 10px;
+  padding: 1%;
   margin-right: 4%;
 
   margin-top: 3%;
-  width: 20%;
+  width: 25%;
   height: 20%;
   border-radius: 8px;
   background: linear-gradient(110.42deg, #feaf00 18.27%, #f8d442 91.84%);
@@ -306,7 +307,9 @@ main {
   font-size: 30px;
   text-align: right;
 }
-
+.currency {
+  font-size: 1.2rem;
+}
 /*                               */
 
 .TopBar {
@@ -329,7 +332,7 @@ main {
 }
 
 .SearchForm > input {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 
   width: 126%;
   height: 34px;
@@ -359,16 +362,12 @@ input::placeholder {
   height: 20px;
 }
 
-
-
-
 .StudnetInfo {
-  min-height: 100vh;
-
+  height: 100%;
   background: #f6f6f6;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center;
+  background-repeat: repeat; */
   display: flex;
   flex-direction: column;
 }
@@ -381,8 +380,7 @@ input::placeholder {
   padding-left: 0.3rem;
   align-items: center;
   width: 98%;
-  height:4%
-  ;
+  height: 4%;
   transition: all 0.5s ease-in-out;
   top: 0;
   z-index: 100;
@@ -395,7 +393,6 @@ input::placeholder {
   font-size: 24px;
 }
 
-
 .leftofHeadr > img {
   width: 15px;
   height: 30px;
@@ -404,7 +401,7 @@ input::placeholder {
 }
 .leftofHeadr > button {
   padding: 10px 24px;
-  margin-bottom: 1% ;
+  margin-bottom: 1%;
   font-size: 17px;
   font-family: "Montserrat";
   font-style: normal;
@@ -508,6 +505,7 @@ input::placeholder {
   cursor: pointer;
 }
 .SbackG {
+  width: 100%;
   background: #f6f6f6;
   height: 50rem;
   background-size: cover;
@@ -564,6 +562,12 @@ input::placeholder {
   color: #acacac;
 }
 .tablediv {
+  width: 100%;
+  background: #f6f6f6;
+  height: 55rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5px 30px;
 }
 .hidden-row {

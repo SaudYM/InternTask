@@ -38,10 +38,8 @@ function Sidebar({ children }: any) {
           </div>
           <div className="UserInfo">
             <img src="user.svg" alt="user" className="UserIMG" />
-            <p className="AdminFont">
-              Karthi Madesh
-              <p className="AdminFont2">Admin</p>
-            </p>
+            <p className="AdminFont">Karthi Madesh</p>{" "}
+            <p className="AdminFont2">Admin</p>
           </div>
           <div className="SidebarlinksContainer">
             {menuItems.map((item, index) => (

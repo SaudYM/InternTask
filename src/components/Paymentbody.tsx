@@ -22,22 +22,23 @@ export default function Paymentbody(props: any) {
     <>
       {" "}
       <div className="tablediv">
-        <table id="payments">
-          <tr>
-            <th>Name</th>
-            <th>Payment Schedule</th>
-            <th>Bill Number</th>
-            <th>Amount Paid</th>
-            <th>Balance amount</th>
-            <th>Date</th>
-            <th></th>
-          </tr>
-
-          {payments.map((payment: Payment, index: number) => {
-            return (
-              <>
+        {payments.length > 0 && (
+          <table id="payments" key="tableofPay">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Payment Schedule</th>
+                <th>Bill Number</th>
+                <th>Amount Paid</th>
+                <th>Balance amount</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {payments.map((payment: Payment, index: number) => (
                 <tr
-                  key={index}
+                  key={payment.billNumber}
                   className={hiddenRows.includes(index) ? "hidden-row" : ""}
                 >
                   <td>{payment.name}</td>
@@ -49,15 +50,15 @@ export default function Paymentbody(props: any) {
                   <td>
                     <img
                       src="eye.svg"
-                      alt="visiable"
+                      alt="visible"
                       onClick={() => toggleRowVisibility(index)}
                     />
                   </td>
-                </tr>{" "}
-              </>
-            );
-          })}
-        </table>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </>
   );

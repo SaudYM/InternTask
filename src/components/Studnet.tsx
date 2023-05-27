@@ -68,7 +68,7 @@ export default function Studnet(props: any) {
   return (
     <Sidebar>
       <TopBar>
-        <body className="StudnetInfo">
+        <div className="StudnetInfo">
           <div className="StudentsHeader">
             <p>Students List</p>
             <div className="leftofHeadr">
@@ -86,7 +86,7 @@ export default function Studnet(props: any) {
             </div>
             <div className="CardsContainer">
               {studnets.map((studnet: Student) => (
-                <div className="listcard">
+                <div className="listcard" key={studnet.id}>
                   <img className="studentimg" src="user.svg" alt="studentimg" />
                   <span className="name">{studnet.name}</span>
                   <span className="email">{studnet.email}</span>
@@ -112,7 +112,7 @@ export default function Studnet(props: any) {
               ))}
             </div>
           </div>
-        </body>
+        </div>
       </TopBar>
     </Sidebar>
   );

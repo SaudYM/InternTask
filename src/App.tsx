@@ -10,7 +10,7 @@ function App() {
     {
       name: "Karthi Madesh",
       paymentSchedule: "Monthly",
-      billNumber: "123456789",
+      billNumber: "12341256789",
       amountPaid: "1000",
       balanceAmount: "1000",
       date: "08-Dec, 2021",
@@ -19,30 +19,13 @@ function App() {
     {
       name: "Karthi Madesh",
       paymentSchedule: "Monthly",
-      billNumber: "123456789",
+      billNumber: "12345126789",
       amountPaid: "1000",
       balanceAmount: "1000",
       date: "08-Dec, 2021",
       img: "eye.svg",
     },
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
-    {
-      name: "Karthi Madesh",
-      paymentSchedule: "Monthly",
-      billNumber: "123456789",
-      amountPaid: "1000",
-      balanceAmount: "1000",
-      date: "08-Dec, 2021",
-      img: "eye.svg",
-    },
+    
   ]);
   const [studnets, setStudnets] = useState([
     {
