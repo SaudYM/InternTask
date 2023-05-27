@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+import { useState } from "react";
+
 import Modal from "react-bootstrap/Modal";
 
 export default function AddStudnet(props: any) {

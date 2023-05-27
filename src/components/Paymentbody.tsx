@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 interface Payment {
   name: string;
   paymentSchedule: string;
