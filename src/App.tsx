@@ -68,7 +68,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignIn />} />
-        <Route path="/DashBoard" element={<DashBoard />} />
+        <Route path="/DashBoard" element={<DashBoard studnets={studnets} />} />
         <Route
           path="/Studnet"
           element={<Studnet studnets={studnets} setStudnets={setStudnets} />}

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Home() {
+export default function Home(props: any) {
   return (
     <div className="StudentContainer">
       <div className="SummeryCards">
@@ -9,7 +9,9 @@ export default function Home() {
           <br />
           <span className="Tag">Students</span>
           <br />
-          <div className="NumberDB"><b>243</b></div>
+          <div className="NumberDB">
+            <b>{props.studnets.length}</b>
+          </div>
         </div>
       </div>
       <div className="SummeryCards2">
@@ -18,7 +20,9 @@ export default function Home() {
           <br />
           <span className="Tag">Course</span>
           <br />
-          <div className="NumberDB"><b>13</b></div>
+          <div className="NumberDB">
+            <b>13</b>
+          </div>
         </div>
       </div>
       <div className="SummeryCards3">
@@ -27,7 +31,9 @@ export default function Home() {
           <br />
           <span className="Tag">Payments</span>
           <br />
-          <div className="NumberDB"><b>INR 556,000</b></div>
+          <div className="NumberDB">
+            <b>INR 556,000</b>
+          </div>
         </div>
       </div>
       <div className="SummeryCards4">
@@ -36,7 +42,9 @@ export default function Home() {
           <br />
           <span className="TagUser">Users</span>
           <br />
-          <div className="NumberDB"><b>3</b></div>
+          <div className="NumberDB">
+            <b>3</b>
+          </div>
         </div>
       </div>
     </div>
