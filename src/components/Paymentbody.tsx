@@ -10,7 +10,7 @@ interface Payment {
 }
 export default function Paymentbody(props: any) {
   const [hiddenRows, setHiddenRows] = useState([{}]);
-  const [payments, setPayments] = [props.payments, props.setPayments];
+  const [payments] = [props.payments];
   const toggleRowVisibility = (index: number) => {
     if (hiddenRows.includes(index)) {
       setHiddenRows(hiddenRows.filter((item) => item !== index));
